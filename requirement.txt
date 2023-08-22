@@ -1,0 +1,2 @@
+pandas == 1.5.3
+tensorboard == 2.12.2

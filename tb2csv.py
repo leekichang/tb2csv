@@ -113,6 +113,6 @@ if __name__ == '__main__':
                 
     final_df = pd.DataFrame.from_dict(final_dict)
     final_df = final_df[desired_stages]
-    os.makedirs('./result_summaries')
+    os.makedirs('./result_summaries', exist_ok=True)
     final_df.to_csv(f'./result_summaries/{interest}.csv')
     print(f'{interest}.csv SAVED!')
